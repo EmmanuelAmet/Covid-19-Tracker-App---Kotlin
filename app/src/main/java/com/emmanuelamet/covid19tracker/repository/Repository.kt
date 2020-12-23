@@ -8,4 +8,8 @@ class Repository {
     suspend fun getAllCountries(): Response<List<Case>>{
         return ApiInstance.api.getAllCountries()
     }
+
+    suspend fun getCountry(country:String): Response<Case>{
+        return ApiInstance.api.getCountry(country)
+    }
 }

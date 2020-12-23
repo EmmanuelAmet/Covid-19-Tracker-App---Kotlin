@@ -10,11 +10,19 @@ import retrofit2.Response
 
 class MainViewModel(private val repository: Repository): ViewModel() {
     val myResponse : MutableLiveData<Response<List<Case>>> = MutableLiveData()
+    val myCountryResponse : MutableLiveData<Response<Case>> = MutableLiveData()
 
     fun getAllCases(){
         viewModelScope.launch {
             val response: Response<List<Case>> = repository.getAllCountries()
             myResponse.value = response
+        }
+    }
+
+    fun getCountry(country:String){
+        viewModelScope.launch {
+            val response : Response<Case> = repository.getCountry(country)
+            myCountryResponse.value = response
         }
     }
 
