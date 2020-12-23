@@ -1,4 +1,4 @@
-package com.emmanuelamet.covid19tracker
+package com.emmanuelamet.covid19tracker.view
 
 import android.app.Activity
 import android.content.Intent
@@ -14,12 +14,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
+import com.emmanuelamet.covid19tracker.R
 import com.emmanuelamet.covid19tracker.adapter.Adapter
 import com.emmanuelamet.covid19tracker.adapter.AdapterCountry
 import com.emmanuelamet.covid19tracker.repository.Repository
+import com.emmanuelamet.covid19tracker.viewModel.MainViewModel
+import com.emmanuelamet.covid19tracker.viewModelFactory.MainViewModelFactory
 import kotlinx.android.synthetic.main.fragment_list.*
-import kotlinx.android.synthetic.main.item.*
 import java.util.*
 
 class ListFragment : Fragment(), View.OnClickListener {
@@ -150,14 +151,14 @@ class ListFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when(view?.id){
-            R.id.img_search_by_speech->{
+            R.id.img_search_by_speech ->{
                 try {
                     askSpeechInput()
                 }catch(e:Exception){
                     errorToastMessage()
                 }
             }
-            R.id.btn_search->{
+            R.id.btn_search ->{
                 if(TextUtils.isEmpty(search_editText.text)){
                     Toast.makeText(context, "Enter a country", Toast.LENGTH_LONG).show()
                 }else{

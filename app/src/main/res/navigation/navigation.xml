@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.emmanuelamet.covid19tracker.ListFragment"
+        android:name="com.emmanuelamet.covid19tracker.view.ListFragment"
         android:label="Covid-19 Tracker"
         tools:layout="@layout/fragment_list" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.emmanuelamet.covid19tracker.DetailFragment"
+        android:name="com.emmanuelamet.covid19tracker.view.DetailFragment"
         android:label="Detail"
         tools:layout="@layout/fragment_detail" >
         <action

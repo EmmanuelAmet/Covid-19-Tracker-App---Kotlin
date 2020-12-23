@@ -1,4 +1,4 @@
-package com.emmanuelamet.covid19tracker
+package com.emmanuelamet.covid19tracker.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.emmanuelamet.covid19tracker.DetailFragmentArgs
+import com.emmanuelamet.covid19tracker.R
 import com.emmanuelamet.covid19tracker.utils.loadImage
 import kotlinx.android.synthetic.main.fragment_detail.*
 

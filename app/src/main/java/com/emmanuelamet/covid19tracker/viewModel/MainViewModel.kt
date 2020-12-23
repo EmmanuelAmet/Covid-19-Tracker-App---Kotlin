@@ -1,4 +1,4 @@
-package com.emmanuelamet.covid19tracker
+package com.emmanuelamet.covid19tracker.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

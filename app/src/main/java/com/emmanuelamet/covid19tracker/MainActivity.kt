@@ -2,14 +2,10 @@ package com.emmanuelamet.covid19tracker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.emmanuelamet.covid19tracker.repository.Repository
+import com.emmanuelamet.covid19tracker.viewModel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
     companion object{
