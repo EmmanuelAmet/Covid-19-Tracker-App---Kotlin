@@ -23,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/flage_image"
-                android:layout_width="230dp"
-                android:layout_height="160dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher_round"
                 android:contentDescription="@string/image"
                 android:scaleType="fitXY"/>
@@ -59,24 +59,24 @@
                     android:layout_height="1dp"
                     android:background="?android:attr/listDivider" />
 
-                <TextView
-                    android:id="@+id/active_cases_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="242" />
+<!--                <TextView-->
+<!--                    android:id="@+id/active_cases_item"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="242" />-->
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider" />
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
 
-                <TextView
-                    android:id="@+id/death_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="324" />
+<!--                <TextView-->
+<!--                    android:id="@+id/death_item"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="324" />-->
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
